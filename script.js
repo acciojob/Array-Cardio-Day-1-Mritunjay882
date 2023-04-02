@@ -73,11 +73,11 @@ const sorted = inventors.sort(function(a, b) {
 // Sort the people alphabetically by last name and return the sorted array
 export function sortByLastName() {
 return people.sort((a, b) => {
-    const [aLast, aFirst] = a.split(', ');
-    const [bLast, bFirst] = b.split(', ');
+    const [aLast, aFirst] = a.split(',');
+    const [bLast, bFirst] = b.split(',');
     return aLast.localeCompare(bLast) || aFirst.localeCompare(bFirst);
   });
-}
+
 
 // 7. Reduce Exercise
 // Sum up the instances of each of these
